@@ -1,0 +1,201 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>村医主导的移动健康干预研究播客</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f8f4f0;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(31, 38, 135, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glassmorphism:hover {
+            box-shadow: 0 15px 45px rgba(31, 38, 135, 0.15);
+            transform: translateY(-3px);
+        }
+        .speaker-a {
+            color: #3b82f6;
+            font-weight: 600;
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+            background-color: rgba(59, 130, 246, 0.1);
+            transition: all 0.3s ease;
+        }
+        .speaker-b {
+            color: #10b981;
+            font-weight: 600;
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+            background-color: rgba(16, 185, 129, 0.1);
+            transition: all 0.3s ease;
+        }
+        .speaker-a:hover, .speaker-b:hover {
+            transform: translateX(3px);
+        }
+        .transcript-container {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 16px;
+        }
+        .transcript-container p {
+            margin-bottom: 1.5rem;
+            padding: 0.8rem 0;
+            line-height: 1.8;
+        }
+        .active-line {
+            background-color: rgba(59, 130, 246, 0.08);
+            border-left: 5px solid #3b82f6;
+            margin: 1rem -2rem;
+            padding: 1.2rem 2rem;
+            border-radius: 0 8px 8px 0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .waveform {
+            height: 160px;
+            width: 100%;
+            aspect-ratio: 21/9;
+            border-radius: 16px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .waveform:hover {
+            transform: scale(1.01);
+        }
+        .health-icon {
+            color: #ef4444;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">村医主导的移动健康干预研究</h1>
+            <p class="text-gray-600">探索农村心血管病风险管理的创新模式</p>
+        </div>
+
+        <div class="glassmorphism p-6 mb-8">
+            <div class="waveform mb-4" style="background-image: url('https://s.coze.cn/image/eQSczaAh2SM/')"></div>
+            
+            <div class="flex items-center justify-between mb-4">
+                <audio id="podcast-audio" controls class="w-full">
+                    <source src="https://lf-bot-studio-plugin-resource.coze.cn/obj/bot-studio-platform-plugin-tos/sami_podcast/tts/4f47a5f6d227480db1471935f18821c9.mp3" type="audio/mpeg">
+                    您的浏览器不支持音频播放
+                </audio>
+            </div>
+            
+        </div>
+
+        <div class="glassmorphism p-6 mb-8">
+            <h2 class="text-xl font-semibold mb-4 flex items-center">
+                <i class="fas fa-info-circle health-icon"></i>研究背景
+            </h2>
+            <p class="text-gray-700">当前，农村地区居民面临沉重的心血管疾病负担。乡村医生是农村居民健康的"守门人"，但知识和服务能力参差不齐。SMARTER研究利用"互联网+"模式和移动健康干预技术，为村医提供定制化健康管理服务工具包，助力村医慢病管理工作提质增效。</p>
+        </div>
+
+        <div class="glassmorphism p-6">
+            <h2 class="text-xl font-semibold mb-4 flex items-center">
+                <i class="fas fa-closed-captioning mr-2 text-blue-500"></i>播客字幕
+            </h2>
+            
+            <div class="transcript-container" id="transcript">
+                <p class="mb-3"><span class="speaker-a">主持人:</span> 哈喽大家好欢迎来到今天的播客，啊今天咱们要聊一个特别接地气但是又特别有意义的话题，就是。村医主导的移动健康干预，对咱中国农村居民心血管病风险的影响。</p>
+                
+                <p class="mb-3"><span class="speaker-b">嘉宾:</span> 听上去很有意思，那我们就开始吧直接就来聊一聊这个干预到底是怎么一回事，效果怎么样。</p>
+                
+                <p class="mb-3"><span class="speaker-a">主持人:</span> 咱们先来聊一个比较大的问题吧就是，村医主导的这种移动健康干预，在农村的基层医疗。到底效果怎么样，值不值得去推？</p>
+                
+                <p class="mb-3"><span class="speaker-b">嘉宾:</span> 就这个 SMARTER 研究里面就很明确的发现就是这种干预呢他是能够。在十二个月里面。显著的降低，心血管病高危对象的一个十年发病风险和终生发病风险。同时呢在这个收缩压呀，舒张压呀。空腹血糖啊，包括吸烟率，还有身体活动不足这个比例上面都是有显著的改善的。而且他的这个，依从率是逐步上升的，然后患者的满意度也是非常高的，所以就非常适合去。大范围的推广。</p>
+                
+                <p class="mb-3"><span class="speaker-a">主持人:</span> 为什么会想到去做这样的一个研究呢就是村医主导的移动健康干预对心血管病的一级预防，为什么会想到去做这样的研究呢？</p>
+                
+                <p class="mb-3"><span class="speaker-b">嘉宾:</span> 就是因为农村的心血管疾病的负担实在是太重了。但是呢，这个改善生活方式和控制代谢性危险因素这个事情呢，在农村又。非常的难以落地，那。村医其实是非常重要的一个，基层的健康守门人但是他们的，知识储备和服务能力。是参差不齐的，而且他们也没有什么很好的工具去帮助他们。那移动健康技术呢？在二级预防里面是被证明了有效的，但是在一级预防里面其实证据还不是很充分。尤其是，专门为村医设计的工具就非常的少。所以就是基于这么多的空白，所以就有了这个研究。</p>
+                
+                <p class="mb-3"><span class="speaker-a">主持人:</span> 那这个 SMARTER 研究他到底是怎么设计的？</p>
+                
+                <p class="mb-3"><span class="speaker-b">嘉宾:</span> 这是一个整群随机对照试验。是由我们中国医学科学院阜外医院牵头的，然后在全国五个省的一百二十七，个村。招募了四千五百三十三名。心血管病高危对象，然后以村为单位，随机的分成了干预组和对照组。干预组就是接受村医主导的移动健康干预，那对照组就是接受常规的基层卫生服务。</p>
+<div class="my-4">
+    <img src="图片1.png" alt="研究参与者随机分配图表" class="rounded-lg shadow-md w-full max-w-2xl mx-auto">
+</div>
+                
+                <p class="mb-3"><span class="speaker-a">主持人:</span> 那这个村医主导的移动健康干预具体又包含哪些内容呢？</p>
+<div class="my-4">
+    <img src="图片2.png" alt="健康监测和干预流程图表" class="rounded-lg shadow-md w-full max-w-2xl mx-auto">
+</div>
+                
+                <p class="mb-3"><span class="speaker-b">嘉宾:</span> 就是通过对高危人群的画像和分类。为他制定个性化的健康提升目标。然后有定制化的健康教育短视频。然后用手环去实时的监测他的健康数据并给出反馈。还有一些游戏化的激励机制，去鼓励他。然后他的这个主要的研究终点呢就是用我们的 China - PAR 模型。去计算他的心血管病的十年风险的变化，那同时呢也观察一些终生风险啊，危险因素啊，这些次要终点的变化。</p>
+                
+                <p class="mb-3"><span class="speaker-a">主持人:</span> 那这个 SMARTER 研究的结果到底怎么样呢？</p>
+<div class="my-4">
+    <img src="图片3.png" alt="SMARTER试验心血管风险因素控制趋势图表" class="rounded-lg shadow-md w-full max-w-2xl mx-auto">
+</div>
+                
+                <p class="mb-3"><span class="speaker-b">嘉宾:</span> 这个研究的完成率是非常高的，就是有百分之九十九点四的研究对象都完成了这个十二个月的。门诊随访和终点评估。然后更让人欣喜的是，这个定制化的健康教育短视频的满意度是非常高的。就是有百分之九十八点九的人觉得有用，然后百分之八十七点六的人。甚至愿意在研究结束之后继续接收这样的干预。</p>
+                
+                <p class="mb-3"><span class="speaker-a">主持人:</span> 这个结果听起来确实很鼓舞人心啊！</p>
+                
+                <p class="mb-3"><span class="speaker-b">嘉宾:</span> 对啊你看这个短视频的阅读率。从最初的百分之三十五点五。提升到了百分之八十五点九。然后手环的这个每周佩戴五天以上的这个比例呢也从百分之四十八点九。上升到了百分之七十九点一。然后这个运动达标率更是从百分之二十点六。提升到了百分之四十五点三，就这些都说明。这种干预是非常受大家欢迎的，然后也是非常有效的。</p>
+                
+                <p class="mb-3"><span class="speaker-a">主持人:</span> 那这个村医主导的移动健康干预到底在降低心血管病风险上面有多大的成效呢？</p>
+                
+                <p class="mb-3"><span class="speaker-b">嘉宾:</span> 就是这个干预，在十二个月的时候就能够。显著的降低心血管病高危对象的十年发病风险和终生发病风险。然后同时呢在血压的控制上面。血糖的控制上面，吸烟率的下降上面，和身体活动不足的改善上面都是有。非常明显的作用的，但是呢他在。非高密度脂蛋白胆固醇和肥胖率上面的作用呢没有达到统计学意义。</p>
+                
+                <p class="mb-3"><span class="speaker-a">主持人:</span> 看来还是有挺多，亮点的啊这个干预措施！</p>
+                
+                <p class="mb-3"><span class="speaker-b">嘉宾:</span> 对而且他还能够提高这个服药依从性你看这个从百分之二十五点九。提高到了百分之三十五点六。虽然说这个，MACE 这个终点事件没有统计学意义，但是这个趋势也是非常让人振奋的，就是。尤其适合在医疗资源比较匮乏的农村地区去推广使用。</p>
+                
+                <p class="mb-3"><span class="speaker-a">主持人:</span> 那你觉得这个村医主导的移动健康干预模式，最大的亮点或者说，它的意义，在什么地方？</p>
+                
+                <p class="mb-3"><span class="speaker-b">嘉宾:</span> 我觉得就是，它是一个很巧妙的把村医的这种。信任基础，和熟悉度，和移动健康技术结合在一起的一个模式。就他，通过这种健康管理服务包的形式。实现了这个信息在平台，村医和居民之间的一个循环利用。然后也弥补了村医在技术上面的短板和村民在健康知识上面的短板。</p>
+                
+                <p class="mb-3"><span class="speaker-a">主持人:</span> 这个模式听上去确实很实用啊！</p>
+                
+                <p class="mb-3"><span class="speaker-b">嘉宾:</span> 对其实用性还很强的对，而且因为现在手机的普及和短视频这种形式的普及。让这个健康管理的接受度也变得很高。对然后，这个模式其实不仅仅是说在心血管病的管理上面有效果。他其实也可以推广到其他的慢性病和其他的这个医疗资源比较薄弱的地方。就真的是一个，以一个很低的成本。就可以撬动，很大的一个健康改善的这样的一个模式。</p>
+                
+                <p class="mb-3"><span class="speaker-a">主持人:</span> 今天咱们聊了这个村医主导的移动健康干预模式，其实它不仅仅是一个技术上的创新。更多的是，对于基层医疗资源的一个巧妙的整合，和对健康管理的一个全新的思路。我觉得，非常有推广的价值。</p>
+                
+                <p class="mb-3"><span class="speaker-b">嘉宾:</span> 以上就是这期播客的全部内容啦，感谢大家的收听，咱们下期再见，拜拜！</p>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        // 简单的音频与字幕同步逻辑
+        const audio = document.getElementById('podcast-audio');
+        const transcriptLines = document.querySelectorAll('#transcript p');
+        
+        audio.addEventListener('timeupdate', () => {
+            const currentTime = audio.currentTime;
+            
+            transcriptLines.forEach(line => {
+                line.classList.remove('active-line');
+            });
+            
+            // 这里可以添加更精确的字幕同步逻辑
+            // 目前只是简单示例
+            const activeIndex = Math.floor(currentTime / (audio.duration / transcriptLines.length));
+            if (activeIndex < transcriptLines.length) {
+                transcriptLines[activeIndex].classList.add('active-line');
+                // 移除强制滚动行为，保留高亮功能
+            }
+        });
+    </script>
+</body>
+</html>
